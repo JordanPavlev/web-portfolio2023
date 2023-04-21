@@ -4,15 +4,19 @@
   src: url(./assets/fonts/CoolveticaRg-Regular.woff2) format('woff2');
 }
 
+* {
+  margin: 0px;
+}
 html {
   font-size: 50px;
 }
 
 body {
   margin: 0;
-  font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  font-family: 'Helvetica Neue', 'sans-serif';
   color: blue;
-  background: linear-gradient(-45deg, #23a6d5, #8c31a3, #ee7752, #e73c7e);
+  font-weight: 500;
+  background: whitesmoke;
   background-size: 100%;
 	animation-name: gradient;
   animation-duration: 1s;

@@ -5,16 +5,13 @@ import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
 import './App.css';
+import Welcome from './components/Home'
 
 function App () {
     return (
         
       <Routes>
-        <Route path="/" element={<Layout />}>
           <Route path='/' element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Route>
       </Routes>
 
 
