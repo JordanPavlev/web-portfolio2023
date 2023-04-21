@@ -1,0 +1,45 @@
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+
+.box {
+	background-color: #ffffff;
+	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+	color: #141c3a;
+	display: block;
+	//padding: 1.25rem;
+	font-size: 12px;
+	border-radius: 12px;
+
+	.content {
+		.columns {
+			margin-right: 0;
+			display: flex;
+			margin-left: 0;
+			justify-content: center;
+			text-align: center;
+
+			.column {
+				display: block;
+				flex-basis: 0;
+				flex-grow: 1;
+				flex-shrink: 1;
+				padding: 0.75rem;
+
+				.title {
+					font-size: 24px;
+					font-weight: 800;
+				}
+
+				.list-title {
+					margin-top: 50px;
+					margin-bottom: 8px;
+				}
+
+
+				ul {
+					list-style: none;
+				}
+			}
+		}
+	}
+}

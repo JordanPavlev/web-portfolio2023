@@ -32,7 +32,7 @@ const Welcome = () => {
           <br />
           <AnimatedLetters letterClass={letterClass} strArray={letterArray} index={15} />
         </h1>
-        <h2>I design and code beautifully simple things, and I love what I do.</h2>
+        <span className='mini-text'>I design and code beautifully simple things, and I love what I do.</span>
       </div>
       <div className='profile-img'>
         <img alt='project preview' src={working} className='working' />
