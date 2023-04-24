@@ -1,43 +1,131 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
+.about-section {
+	margin-top: -1.84rem;
 
-.box {
-	background-color: #ffffff;
-	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-	color: #141c3a;
-	display: block;
-	//padding: 1.25rem;
-	font-size: 12px;
-	border-radius: 12px;
+	@media (max-width: 600px) {
+		margin-top: 0px;
+	}
 
-	.content {
-		.columns {
-			margin-right: 0;
-			display: flex;
-			margin-left: 0;
-			justify-content: center;
-			text-align: center;
+	.primary-text {
+		background-color: #666af6;
+		height: 10rem;
+
+		.text-center {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
 
 			.column {
-				display: block;
-				flex-basis: 0;
-				flex-grow: 1;
-				flex-shrink: 1;
-				padding: 0.75rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				color: white;
 
 				.title {
 					font-size: 24px;
-					font-weight: 800;
+					margin-top: 2rem;
 				}
 
-				.list-title {
-					margin-top: 50px;
-					margin-bottom: 8px;
+				.subtitle {
+					font-size: 18px;
+					text-align: center;
+					font-weight: 300;
 				}
 
 
-				ul {
-					list-style: none;
+			}
+		}
+	}
+
+	svg {
+		width: 2.5em !important;
+		height: 2em;
+
+		&.svg-inside {
+			color: black;
+			margin-top: 22.5px;
+		}
+	}
+
+	.has-text-success {
+		color: #5BE9B9 !important;
+		width: 61.5px !important;
+
+
+	}
+
+	.box {
+		background-color: #ffffff;
+		margin: 0px 50px;
+		margin-top: -3.5rem;
+		box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+		color: #141c3a;
+		display: block;
+		//padding: 1.25rem;
+		font-size: 12px;
+		border-radius: 12px;
+
+		.content {
+
+
+			.columns {
+				margin-right: 0;
+				display: flex;
+				margin-left: 0;
+				justify-content: center;
+				text-align: center;
+
+				@media (max-width: 600px) {
+					flex-direction: column;
+				}
+
+				.column {
+					display: block;
+					flex-basis: 0;
+					flex-grow: 1;
+					flex-shrink: 1;
+					padding: 0.75rem;
+
+					.title {
+						font-size: 24px;
+						margin-top: 1rem;
+						font-weight: 800;
+						font-family: "eurostile", sans-serif;
+					}
+
+					p {
+						margin-bottom: 1rem;
+						color: black;
+
+						nav-down: auto;
+
+						font-family: "eurostile", sans-serif;
+						font-size: 18px;
+					}
+
+
+					.list-title {
+						margin-top: 50px;
+						margin-bottom: 8px;
+						color: #666af6;
+					}
+
+
+					ul {
+						display: flex;
+						flex-direction: column;
+						gap: 12px;
+
+
+						list-style: none;
+						font-size: 18px;
+						padding: 0px;
+						font-family: "eurostile",
+							sans-serif;
+
+					}
 				}
 			}
 		}

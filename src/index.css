@@ -4,6 +4,8 @@
   src: url(./assets/fonts/CoolveticaRg-Regular.woff2) format('woff2');
 }
 
+$breakpoint-tablet: 768px;
+
 * {
   margin: 0px;
 }
