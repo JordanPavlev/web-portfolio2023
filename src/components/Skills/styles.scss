@@ -10,9 +10,10 @@
 	.primary-text {
 		background-color: #666af6;
 		height: 10rem;
-			@media all and (max-width: 600px) {
-				height: 14rem;
-			}
+
+		@media all and (max-width: 600px) {
+			height: 14rem;
+		}
 
 		.text-center {
 			width: 60%;
@@ -49,11 +50,8 @@
 
 		&.svg-inside {
 			color: black;
-			margin-top: 22.5px;
+			height: 1rem;
 
-			@media all and (max-width: 600px) {
-				margin-top: 10px;
-			}
 		}
 	}
 
@@ -71,7 +69,6 @@
 		box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 		color: #141c3a;
 		display: block;
-		//padding: 1.25rem;
 		font-size: 12px;
 		border-radius: 12px;
 
