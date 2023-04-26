@@ -3,8 +3,7 @@ import './style.scss'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import logo from '../Welcome/logo-header-removebg-preview.png'
-import profile from '../Welcome/undraw_pic_profile_re_7g2h.svg'
+import logo from './logo-header-removebg-preview.png'
 import working from '../Welcome/22.svg'
 
 
@@ -18,12 +17,12 @@ const Welcome = () => {
       setLetterClass('text-animate-hover'))
   }, [])
   return (
-    <div className='container'>
+    <div className='container-welcome'>
       <div className='header'>
         <img alt='project preview' src={logo} className='image-project' />
         <div className='links'>
           <Link to='/contacts' className='mentorship'>Mentorship</Link>
-          
+
           <Link to='/contacts' className='contact-btn'>Say hello</Link>
         </div>
       </div>
