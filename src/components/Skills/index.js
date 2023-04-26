@@ -4,13 +4,13 @@ const Skills = () => {
   return (
     <section className="section about-section">
       <div className="primary-text">
-        <div class="text-center">
-          <div class="column is-three-fifths">
-            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
+        <div className="text-center">
+          <div className="column is-three-fifths">
+            <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
               Hi, I’m Jordan. Nice to meet you.
             </h1>
-            <h2 class="subtitle is-size-5-desktop has-text-weight-normal">
-              Since beginning my journey as a freelance designer over 11 years
+            <h2 className="subtitle is-size-5-desktop has-text-weight-normal">
+              Since beginning my journey as a freelance designer over 3 years
               ago, I've done remote work for agencies, consulted for startups,
               and collaborated with talented people to create digital products
               for both business and consumer use. I'm quietly confident,
@@ -135,7 +135,6 @@ const Skills = () => {
                 <li>Git</li>
                 <li>Github</li>
                 <li>Terminal</li>
-                <li>Vercel</li>
               </ul>
             </div>
             <div className="column">
@@ -191,6 +190,8 @@ const Skills = () => {
                 <li>REST API</li>
                 <li>Nginx</li>
                 <li>AWS</li>
+                <li>Vercel</li>
+
               </ul>
             </div>
           </div>

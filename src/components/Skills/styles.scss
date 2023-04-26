@@ -10,6 +10,9 @@
 	.primary-text {
 		background-color: #666af6;
 		height: 10rem;
+			@media all and (max-width: 600px) {
+				height: 14rem;
+			}
 
 		.text-center {
 			width: 60%;
@@ -26,6 +29,7 @@
 				.title {
 					font-size: 24px;
 					margin-top: 2rem;
+					text-align: center;
 				}
 
 				.subtitle {
@@ -46,6 +50,10 @@
 		&.svg-inside {
 			color: black;
 			margin-top: 22.5px;
+
+			@media all and (max-width: 600px) {
+				margin-top: 10px;
+			}
 		}
 	}
 

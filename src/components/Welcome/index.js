@@ -1,31 +1,25 @@
-import { Link } from 'react-router-dom'
 import './style.scss'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import logo from './logo-header-removebg-preview.png'
 import working from '../Welcome/22.svg'
+import Navbar from '../Navbar'
 
 
 const Welcome = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const letterArray = [' ', 'D', 'e', 's', 'i', 'g', 'n', 'e', 'r', ',', ' ', 'F', 'r', 'o', 'n', 't', 'e', 'n', 'd', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ' ', '&', ' ', 'M', 'e', 'n', 't', 'o', 'r']
-  // const jobArray = ['W', 'e', 'b', '-', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
+  
   useEffect(() => {
     return (
       setLetterClass('text-animate-hover'))
   }, [])
   return (
     <div className='container-welcome'>
-      <div className='header'>
-        <img alt='project preview' src={logo} className='image-project' />
-        <div className='links'>
-          <Link to='/contacts' className='mentorship'>Mentorship</Link>
-
-          <Link to='/contacts' className='contact-btn'>Say hello</Link>
-        </div>
-      </div>
+      
+      <Navbar></Navbar>
+      
       <div className='text-zone'>
         <h1>
           <br />
