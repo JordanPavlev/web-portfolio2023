@@ -16,38 +16,32 @@ const Navbar = () => {
     setNavbarOpen((prev) => !prev)
     setIsClicked((click) => !click)
   }
-  library.add(faBars, faXmark)   
+  library.add(faBars, faXmark)
   return (
     <>
       <nav className="navbar header">
         <img alt="project preview" src={logo} className="image-project" />
         <div className="links links-desktop">
-          <Link to="/contacts" className="mentorship">
-            Mentorship
-          </Link>
           <Link to="/contacts" className="contact-btn">
             Say hello
           </Link>
         </div>
         <div className="links links-mobile">
           <div className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
-          
-              <Link to="/contacts" className="mentorship">
-                Mentorship
-              </Link>
-            
-           
-              <Link to="/contacts" className="contact-btn">
-                Say hello
-              </Link>
-            
+            <Link to="/contacts" className="contact-btn">
+              Say hello
+            </Link>
           </div>
         </div>
-        <button
-          className="toggle"
-          onClick={handleClick}
-        >
-         <i className='hamburger'> {isClicked ?  <FontAwesomeIcon icon="fa-xmark" />: <FontAwesomeIcon icon="fa-solid fa-bars" /> }</i>
+        <button className="toggle" onClick={handleClick}>
+          <i className="hamburger">
+            {' '}
+            {isClicked ? (
+              <FontAwesomeIcon icon="fa-xmark" />
+            ) : (
+              <FontAwesomeIcon icon="fa-solid fa-bars" />
+            )}
+          </i>
         </button>
       </nav>
     </>
