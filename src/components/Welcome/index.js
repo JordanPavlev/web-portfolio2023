@@ -9,7 +9,7 @@ import Navbar from '../Navbar'
 const Welcome = () => {
   document.title = 'Welcome | Jordan Pavlev';
   const [letterClass, setLetterClass] = useState('text-animate')
-  const letterArray = [' ', 'D', 'e', 's', 'i', 'g', 'n', 'e', 'r', ',', ' ', 'F', 'r', 'o', 'n', 't', 'e', 'n', 'd', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ' ', '&', ' ', 'M', 'e', 'n', 't', 'o', 'r']
+  const letterArray = ['D', 'e', 's', 'i', 'g', 'n', 'e', 'r', " ", 'a', 'n', "d", " ", 'F', 'u', 'l', 'l', 's', 't', 'a', 'c', "k", ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
   
   useEffect(() => {

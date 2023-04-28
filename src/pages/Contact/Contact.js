@@ -10,7 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 const Contact = () => {
   library.add(faTrash, faHome)
-  // document.title = 'Contact | Jordan Pavlev';
+  document.title = 'Contact | Jordan Pavlev';
 
   const [formData, setFormData] = useState({
     name: '',

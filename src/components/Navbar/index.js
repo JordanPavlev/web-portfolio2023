@@ -22,13 +22,13 @@ const Navbar = () => {
       <nav className="navbar header">
         <img alt="project preview" src={logo} className="image-project" />
         <div className="links links-desktop">
-          <Link to="/contacts" className="contact-btn">
+          <Link to="/contact" className="contact-btn">
             Say hello
           </Link>
         </div>
         <div className="links links-mobile">
           <div className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
-            <Link to="/contacts" className="contact-btn">
+            <Link to="/contact" className="contact-btn">
               Say hello
             </Link>
           </div>
